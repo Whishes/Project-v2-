@@ -7,6 +7,7 @@ body {
 
 .content-section {
     height: 100vh;
+    height: calc(var(--v, 1vh) * 100);
     width: 100vw;
     /* TODO:
     background: #121212;
@@ -26,7 +27,6 @@ body {
     position: absolute;
     top: 40%;
     left: 32%;
-    font-size: 6.67rem;
 
     /* TODO:
     margin-right: 50%;
@@ -40,9 +40,8 @@ body {
 .subtext { 
     font-family: 'Offside', sans-serif;
     position: absolute;
-    top: 51%;
+    top: 52%;
     left: 35%;
-    font-size: 3rem;
     /* TODO:
     colour: FFFFFF
     opacity: 0.60
@@ -51,7 +50,48 @@ body {
 
 .scroll-icon {
     position: absolute;
-    left: 50%;
-    margin-right: 30px;
-    bottom: 10px;
+    left: 42%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    /* TODO: Find better way to center icon across all sizes */
+}
+
+/* 
+    MEDIA QUERIES 
+*/
+
+/* Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+    .name {
+        font-size: 48px;
+        left: 25%;    
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    .name {
+        font-size: 60px;
+        left: 20%
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .name {
+        font-size: 70px;
+    }
+    .scroll-icon {
+        left: 46%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .name {
+        font-size: 80px;
+        left: 26%;
+    }
+    .scroll-icon {
+        left: 46%;
+    }
 }
