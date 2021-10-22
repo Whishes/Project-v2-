@@ -1,202 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="Portfolio" content="Nicholas Cruickshank">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="Portfolio" content="Nicholas Cruickshank" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Favicon Handlers -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <!-- Fonts/Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Offside&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Offside&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
 
     <title>Nicholas Cruickshank</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header darkmode">
-        <h1 class="header-heading main-heading">
-            Hi, I'm
-            <br>
-            Nicholas Cruickshank
-        </h1>
-        <h2 class="header-heading sub-heading">
-            A web developer
-            <br>
-            based in Melbourne
-        </h2>
-        <p class="tag-heading">
-            Start scrolling for more!
-        </p>
+      <h1 class="header-heading main-heading">
+        Hi, I'm
+        <br />
+        Nicholas Cruickshank
+      </h1>
+      <h2 class="header-heading sub-heading">
+        A web developer
+        <br />
+        based in Melbourne
+      </h2>
+      <p class="tag-heading">Start scrolling for more!</p>
     </header>
 
     <main>
-        <!-- Triangle SVG - use outside of section to prevent padding being added -->
-        <svg class="svg purple" viewBox="0 0 100 100" height="65" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <path class="darkmode" d="M 0 0 L 50 100 L 100 0 z" fill="none" stroke="none"></path>
-        </svg>
-        <!-- Projects Page -->
-        <section class="content-section grid-project purple" id="projects-section">
-            <h2 class="heading grid-heading" role="heading" aria-label="Projects">My Projects</h2> 
-            <section class="individual-project">
-                <h3 class="project-heading">[Project Title]</h3>
-                <a href="">
-                    <img class="project-img" src="images/example image.png" alt="">
-                </a>
-                <p class="project-paragraph">[insert description]</p>
-                <ul class="links">
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-window"></i>
-                            Project Demo
-                        </a>
-                    </li>
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-github"></i>
-                            Project Github
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="individual-project">
-                <h3 class="project-heading">[Project Title]</h3>
-                <a href="">
-                    <img class="project-img" src="images/example image.png" alt="">
-                </a>
-                <p class="project-paragraph">[insert description]</p>
-                <ul class="links">
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-window"></i>
-                            Project Demo
-                        </a>
-                    </li>
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-github"></i>
-                            Project Github
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="individual-project">
-                <h3 class="project-heading">[Project Title]</h3>
-                <a href="">
-                    <img class="project-img" src="images/example image.png" alt="">
-                </a>
-                <p class="project-paragraph">[insert description]</p>
-                <ul class="links">
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-window"></i>
-                            Project Demo
-                        </a>
-                    </li>
-                    <li class="link-item">
-                        <a class="project-link" href="">
-                            <i class="bi bi-github"></i>
-                            Project Github
-                        </a>
-                    </li>
-                </ul>
-            </section>                 
+      <!-- Triangle SVG - use outside of section to prevent padding being added -->
+      <svg
+        class="svg purple"
+        viewBox="0 0 100 100"
+        height="65"
+        width="100%"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <path
+          class="darkmode"
+          d="M 0 0 L 50 100 L 100 0 z"
+          fill="none"
+          stroke="none"
+        ></path>
+      </svg>
+      <!-- Projects Page -->
+      <section
+        class="content-section grid-project purple"
+        id="projects-section"
+      >
+        <h2 class="heading grid-heading" role="heading" aria-label="Projects">
+          My Projects
+        </h2>
+        <section class="individual-project">
+          <h3 class="project-heading"><b>TypeScript</b> Patientor app</h3>
+          <a href="">
+            <img
+              class="project-img"
+              src="images/Projects/example image.png"
+              alt="Patientor app screenshot"
+            />
+          </a>
+          <p class="project-paragraph">[insert description]</p>
+          <ul class="links">
+            <li class="link-item">
+              <a class="project-link" href="">
+                <i class="bi bi-window"></i>
+                Project Demo
+              </a>
+            </li>
+            <li class="link-item">
+              <a class="project-link" href="">
+                <i class="bi bi-github"></i>
+                Project Github
+              </a>
+            </li>
+          </ul>
         </section>
+        <section class="individual-project">
+          <h3 class="project-heading"><b>React</b> Blog List App</h3>
+          <a href="https://portfolio-bloglist-app.herokuapp.com/">
+            <img
+              class="project-img"
+              src="images/Projects/Bloglist_app.jpg"
+              alt="Blog List App screenshot"
+            />
+          </a>
+          <p class="project-paragraph">[insert description]</p>
+          <ul class="links">
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://portfolio-bloglist-app.herokuapp.com/"
+              >
+                <i class="bi bi-window"></i>
+                Project Demo
+              </a>
+            </li>
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://github.com/Whishes/Bloglist-App"
+              >
+                <i class="bi bi-github"></i>
+                Project Github
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="individual-project">
+          <h3 class="project-heading"><b>Vanilla JS</b> Memory Game</h3>
+          <a href="https://github.com/Whishes/Project-2-Memory-Game">
+            <img
+              class="project-img"
+              src="images/Projects/Memory_game.jpg"
+              alt="JS Memory Game screenshot"
+            />
+          </a>
+          <p class="project-paragraph">
+            First major project from the Web Development Bootcamp which focuses
+            on DOM manipulation.
+          </p>
+          <ul class="links">
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://whishes.github.io/Project-2-Memory-Game/"
+              >
+                <i class="bi bi-window"></i>
+                Project Demo
+              </a>
+            </li>
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://github.com/Whishes/Project-2-Memory-Game"
+              >
+                <i class="bi bi-github"></i>
+                Project Github
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
 
-        <!-- Abouts Page -->
-        <!-- Triangle SVG - use outside of section to prevent padding being added -->
-        <svg class="svg darkmode" viewBox="0 0 100 100" height="65" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <path class="purple" d="M 0 0 L 50 100 L 100 0 z" fill="red" stroke="nones"></path>
-        </svg>        
-        <section class="content-section darkmode" id="skills-section">
-            <h2 class="heading" role="heading" aria-label="Skills">My Skills</h2>
-            <ul class="links">
-                <li class="link-item">
-                    <i class="bi bi-chevron-double-right"></i>
-                    Test
-                </li>
-                <li class="link-item">
-                    <i class="bi bi-chevron-double-right"></i>
-                    Test
-                </li>
-                <li class="link-item">
-                    <i class="bi bi-chevron-double-right"></i>
-                    Test
-                </li>
-                <li class="link-item">
-                    <i class="bi bi-chevron-double-right"></i>
-                    Test
-                </li>
-            </ul>
-        </section>
+      <!-- Triangle SVG - use outside of section to prevent padding being added -->
+      <svg
+        class="svg darkmode"
+        viewBox="0 0 100 100"
+        height="65"
+        width="100%"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <path
+          class="purple"
+          d="M 0 0 L 50 100 L 100 0 z"
+          fill="red"
+          stroke="nones"
+        ></path>
+      </svg>
 
-        <!-- Contact Me Page -->
-        <!-- Triangle SVG - use outside of section to prevent padding being added -->
-        <svg class="svg purple" viewBox="0 0 100 100" height="65" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <path class="darkmode" d="M 0 0 L 50 100 L 100 0 z" fill="red" stroke="none"></path>
-        </svg>
-        <section class="content-section purple" id="contact-section">
-            <h2 class="heading" role="heading" aria-label="Contact Me">Contact Me</h2>
-            <div class="contact">
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form>
-                        <input type="hidden" name="contact_number">
-                        <div class="row">
-                            <div class="input50">
-                                <input type="text" placeholder="Full Name" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input50">
-                                <input type="text" placeholder="Email" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input50">
-                                <input type="text" placeholder="Subject" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input100">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input100">
-                                <input type="submit" value="Send" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
+      <!-- My Skills Page -->
+      <section class="content-section darkmode" id="skills-section">
+        <h2 class="heading" role="heading" aria-label="Skills">My Skills</h2>
+        <ul class="links">
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            HTML, CSS, Javascript
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            ReactJS
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            NodeJS
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            Express
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            Integration testing with Jest
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            E2E testing with Cypress
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            State management with Redux
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            GraphQL
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            TypeScript
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            React Native
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            CI/CD pipeline
+          </li>
+          <li class="link-item">
+            <i class="bi bi-chevron-double-right"></i>
+            Database management using MongoDB
+          </li>
+        </ul>
+      </section>
+
+      <!-- Triangle SVG - use outside of section to prevent padding being added -->
+      <svg
+        class="svg purple"
+        viewBox="0 0 100 100"
+        height="65"
+        width="100%"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <path
+          class="darkmode"
+          d="M 0 0 L 50 100 L 100 0 z"
+          fill="red"
+          stroke="none"
+        ></path>
+      </svg>
+
+      <!-- Contact Me Page -->
+      <section class="content-section purple" id="contact-section">
+        <h2 class="heading" role="heading" aria-label="Contact Me">
+          Contact Me
+        </h2>
+        <div class="contact">
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <div class="row">
+              <div class="input50">
+                <input type="text" placeholder="Full Name" />
+              </div>
             </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="footer purple">
-            <div class="footer-links">
-                <a class="footer-link" href="https://au.linkedin.com/">
-                    <i class="bi bi-linkedin"></i> 
-                    <span>LinkedIn</span>
-                </a>
+            <div class="row">
+              <div class="input50">
+                <input type="text" placeholder="Email" />
+              </div>
             </div>
-            <div class="footer-links">
-                <a class="footer-link" href="https://github.com/">
-                    <i class="bi bi-github"></i>
-                    <span>Github</span>
-                </a>
-            </div>    
-        </footer>
+            <div class="row">
+              <div class="input50">
+                <input type="text" placeholder="Subject" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input100">
+                <textarea placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input50">
+                <input class="submit-text" type="submit" value="Send" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer purple">
+        <div class="footer-links">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/nicholascruickshank/"
+          >
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link" href="https://github.com/Whishes">
+            <i class="bi bi-github"></i>
+            <span>Github</span>
+          </a>
+        </div>
+      </footer>
     </main>
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- "Normal JS" -->
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
