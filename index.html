@@ -93,24 +93,97 @@
           My Projects
         </h2>
         <section class="individual-project">
-          <h3 class="project-heading"><b>TypeScript</b> Patientor app</h3>
-          <a href="">
+          <h3 class="project-heading"><b>React</b> My Photography Portfolio</h3>
+          <a href="https://nicks-flicks.herokuapp.com/">
             <img
               class="project-img"
-              src="images/Projects/example image.png"
-              alt="Patientor app screenshot"
+              src="images/Projects/Photography_site.jpg"
+              alt="Pokedex app screenshot"
             />
           </a>
-          <p class="project-paragraph">[insert description]</p>
+          <p class="project-paragraph">
+            This personal project was created so I could showcase my photography
+            hobby without having to reduce image quality too much. Initially, I
+            considered posting my photos on Instagram but upon further research
+            I discovered that the site severely reduces image quality which was
+            to be avoided. As such, I use Imgur to host all my photos and then
+            use it's api to obtain album data to map the image links to their
+            own divs.
+          </p>
           <ul class="links">
             <li class="link-item">
-              <a class="project-link" href="">
+              <a
+                class="project-link"
+                href="https://nicks-flicks.herokuapp.com/"
+              >
+                <i class="bi bi-window"></i>
+                Project Demo
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="individual-project">
+          <h3 class="project-heading"><b>CI/CD</b> Pokedex app</h3>
+          <a href="https://part11-pokedex-app.herokuapp.com/">
+            <img
+              class="project-img"
+              src="images/Projects/Pokedex_app.jpg"
+              alt="Pokedex app screenshot"
+            />
+          </a>
+          <p class="project-paragraph">
+            This project was created to both practice the usage and creation of
+            a CI/CD pipeline using Github Actions.
+          </p>
+          <ul class="links">
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://part11-pokedex-app.herokuapp.com/"
+              >
                 <i class="bi bi-window"></i>
                 Project Demo
               </a>
             </li>
             <li class="link-item">
-              <a class="project-link" href="">
+              <a
+                class="project-link"
+                href="https://github.com/Whishes/full-stack-open-pokedex"
+              >
+                <i class="bi bi-github"></i>
+                Project Github
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="individual-project">
+          <h3 class="project-heading"><b>TypeScript</b> Patientor app</h3>
+          <a href="https://portfolio-patientor-app.herokuapp.com/">
+            <img
+              class="project-img"
+              src="images/Projects/Patientor_app.jpg"
+              alt="Patientor app screenshot"
+            />
+          </a>
+          <p class="project-paragraph">
+            A project used to practice and demonstrate the usage of Typescript +
+            React on a frontend and backend.
+          </p>
+          <ul class="links">
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://portfolio-patientor-app.herokuapp.com/"
+              >
+                <i class="bi bi-window"></i>
+                Project Demo
+              </a>
+            </li>
+            <li class="link-item">
+              <a
+                class="project-link"
+                href="https://github.com/Whishes/portfolio-patientor-app"
+              >
                 <i class="bi bi-github"></i>
                 Project Github
               </a>
@@ -126,7 +199,11 @@
               alt="Blog List App screenshot"
             />
           </a>
-          <p class="project-paragraph">[insert description]</p>
+          <p class="project-paragraph">
+            First major project of the FullStackOpen bootcamp. This project
+            focuses on the communcation between the frontend and the backend
+            using React and Node.
+          </p>
           <ul class="links">
             <li class="link-item">
               <a
@@ -282,25 +359,30 @@
         </h2>
         <div class="contact">
           <!-- Contact Form -->
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="POST"
+            name="contact_form"
+            data-netlify="true"
+          >
             <div class="row">
               <div class="input50">
-                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Full Name" name="name" />
               </div>
             </div>
             <div class="row">
               <div class="input50">
-                <input type="text" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email" />
               </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="input50">
-                <input type="text" placeholder="Subject" />
+                <input type="text" placeholder="Subject" name="subject" />
               </div>
-            </div>
+            </div> -->
             <div class="row">
               <div class="input100">
-                <textarea placeholder="Message"></textarea>
+                <textarea placeholder="Message" name="message"></textarea>
               </div>
             </div>
             <div class="row">
