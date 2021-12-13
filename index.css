@@ -106,7 +106,6 @@ html {
 .grid-project {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .grid-heading {
@@ -297,6 +296,7 @@ html {
   .grid-project {
     row-gap: 3em;
     column-gap: 6em;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
 
   .link-item {
